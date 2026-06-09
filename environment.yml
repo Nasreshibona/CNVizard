@@ -3,10 +3,13 @@ channels:
   - bioconda
   - conda-forge
 dependencies:
-  - python=3.12.4
+  - python>=3.12
   - samtools
-  - pip
+  - pip>=24.0
+  - numpy
+  - pandas
+  - matplotlib
   - pip:
-    - pyinstaller
-    - streamlit
-    - seaborn
+    - pyinstaller>=6.0.0
+    - streamlit>=1.30.0
+    - seaborn>=0.13.0
